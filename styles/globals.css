@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
 html,
 body {
   padding: 0;
@@ -11,6 +12,6 @@ body {
 
 @layer components {
     .container-layer {
-        @apply px-5 py-5 sm:px-20 md:px-36 lg:px-48 xl:px-64;
+        /* @apply px-5 py-5 sm:px-20 md:px-36 lg:px-48 xl:px-64; */
     }
 }

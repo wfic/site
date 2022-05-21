@@ -1,2 +1,32 @@
 /* Custom Css Styles */
 /* Import it to js file | import styles from 'this file path' | */
+.buttonUnderlineAnim{
+    position: relative;
+    cursor: pointer;
+}
+.buttonUnderlineAnim:hover{
+    color: rgb(202,138, 4);
+}
+.buttonUnderlineAnim::before{
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(202,138, 4);
+    transition: .4s;
+}
+
+.buttonUnderlineAnim:hover:before{
+    width: 100%;
+}
+
+.mobileMenuLink{
+    color: rgb(202,138, 4);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: .4s;
+    cursor: pointer;
+}
