@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 
 import Nav from '../components/Nav'
+import Footer from '../components/Footer'
 
 
 function school() {
@@ -18,6 +19,7 @@ function school() {
         <main className="container">
             <div>School Page</div>
         </main>
+        <Footer />
     </>
   )
 }

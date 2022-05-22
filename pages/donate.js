@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 
 import Nav from '../components/Nav'
+import Footer from '../components/Footer'
 
 
 function donate() {
@@ -18,6 +19,7 @@ function donate() {
         <main className="container">
             <div>Donation Page</div>
         </main>
+        <Footer />
     </>
   )
 }

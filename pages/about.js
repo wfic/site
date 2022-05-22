@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 
 import Nav from '../components/Nav'
+import Footer from '../components/Footer'
 
 
 function about() {
@@ -18,6 +19,8 @@ function about() {
         <main className="container">
             <div>About Page</div>
         </main>
+
+        <Footer />
     </>
   )
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 
 import Nav from '../components/Nav'
+import Footer from '../components/Footer'
 
 
 function event() {
@@ -17,6 +18,7 @@ function event() {
         <main className="container">
             <div>Event Page</div>
         </main>
+        <Footer />
     </>
   )
 }

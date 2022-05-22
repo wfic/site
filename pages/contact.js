@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Nav from '../components/Nav'
+import Footer from '../components/Footer'
 
 function contact() {
   return (
@@ -16,6 +17,7 @@ function contact() {
         <main className="container">
             <div>Contact Page</div>
         </main>
+        <Footer />
     </>
   )
 }
