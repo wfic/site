@@ -16,7 +16,7 @@ function event() {
         </Head>
         <Nav />
         <div className="container">
-            <div className="h-60 bg-red-300">Event Page</div>
+            <div className="">Event Page</div>
         </div>
         <Footer />
     </>
