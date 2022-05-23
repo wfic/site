@@ -87,7 +87,7 @@ function Footer() {
             </div>
             <div className="w-full h-[1px] bg-gray-400/20 drop-shadow-lg"></div>
 
-            <div className="copy py-5 text-md md:text-xl text-gray-400/30">
+            <div className="copy py-5 text-sm md:text-md text-gray-400/30">
                 {`Copyright © ${year} Islamic Society of Wichita Falls. All rights reserved.`} 
             </div>
 
