@@ -30,3 +30,11 @@
     transition: .4s;
     cursor: pointer;
 }
+
+.carousel{
+    display: flex;
+    justify-content: center;
+}
+.carousel .slide{
+    height: 80vh;
+}

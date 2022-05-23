@@ -1,13 +1,14 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-
+import Script from 'next/script'
 import Nav from '../components/Nav'
+import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 
 export default function Home() {
   return (
-    <div className="">
+    <>
         <Head>
             <title>Wichita Falls Islamic Community Mosque | Home</title>
             <meta name="description" content="Developed by psylab" />
@@ -18,10 +19,10 @@ export default function Home() {
         </Head>
 
         <Nav />
-        <main className="container relative">
-            <div className="">Home Page</div>
-        </main>
+        <Hero />
         <Footer />
-    </div>
+
+        <Script src="/node_modules/dist/js/index.min.js"></Script>
+    </>
   )
 }

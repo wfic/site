@@ -5,7 +5,7 @@ function Footer() {
     const year = new Date().getFullYear()
   return (
     <>
-        <footer className="text-center bg-[url('/img/footer.webp')] bg-no-repeat bg-center">
+        <footer className="relative text-center bg-[url('/img/footer.webp')] bg-no-repeat bg-center">
             <div className="container md:flex md:justify-between py-10">
                 <div className="footerMenu">
                     <h3 className="text-2xl font-bold font-Cinzel py-4 text-yellow-600">Menu</h3>

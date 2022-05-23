@@ -15,9 +15,9 @@ function event() {
             <link rel="icon" href="/favicon.ico" />
         </Head>
         <Nav />
-        <main className="container">
-            <div>Event Page</div>
-        </main>
+        <div className="container">
+            <div className="h-60 bg-red-300">Event Page</div>
+        </div>
         <Footer />
     </>
   )
