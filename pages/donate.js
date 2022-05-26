@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import Script from 'next/script'
 
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
@@ -35,8 +36,23 @@ function donate() {
                             <FaDonate className="text-8xl text-yellow-600" />
                         </div>
                         <p className='mt-5 text-xl text-slate-600'>Please donate to our new mosque in paypal</p>
-                        <button className="text-white bg-blue-600 rounded-full px-5 mt-3">Donate</button>
-
+                        <div>
+                        <div id="donate-button-container">
+                            <div id="donate-button"></div>
+                            <Script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></Script>
+                            <Script>
+                            PayPal.Donation.Button({
+                            env:'production',
+                            hosted_button_id:'AQUAXFVS5ZY4A',
+                            image: {
+                            src:'https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif',
+                            alt:'Donate with PayPal button',
+                            title:'PayPal - The safer, easier way to pay online!',
+                            }
+                            }).render('#donate-button');
+                            </Script>   
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

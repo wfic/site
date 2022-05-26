@@ -47,7 +47,7 @@ function Footer() {
                 <div className="footerServices">
                     <h3 className="text-2xl font-bold font-Cinzel py-4 text-yellow-600">Services</h3>
                     <ul className="">
-                        <li className="text-md md:text-xl text-gray-100/80 font-light ">Marrige</li>
+                        <li className="text-md md:text-xl text-gray-100/80 font-light ">Marriage</li>
                         <li className="text-md md:text-xl text-gray-100/80 font-light ">Funeral</li>
                         <li className="text-md md:text-xl text-gray-100/80 font-light ">Scholarship</li>
                         <li className="text-md md:text-xl text-gray-100/80 font-light ">Shahada</li>
