@@ -30,7 +30,7 @@ export default function Home() {
             <div className="relative bg-[url('/img/bg/homeBg.png')] bg-no-repeat bg-center mb-20">
                 {/* <img src="/img/bg/homeBg.png" alt="home background" /> */}
                 <div className="container h-[50vh] md:h-[70vh] grid place-content-center text-center">
-                    <h2 className="text-xl md:text-4xl font-Cinzel font-bold text-slate-900 mb-5 md:mb-10">Welcome to the Islamic Center</h2>
+                    <h2 className="text-xl md:text-4xl font-Cinzel font-bold text-slate-900 mb-5 md:mb-10">Welcome to Wichita Falls Islamic Society</h2>
                     <p className="text-md md:text-xl text-slate-700 w-2/3 m-auto">The Shaha is not just a mosque for prayers rather it is a community center for all. The Center is committed to preserving an Islamic identity, building and supporting a viable Muslim community, promoting a comprehensive Islamic way of life based on the Holy Quran and the Sunnah of Prophet Muhammad.</p>
                     <div className="mt-10 px-4 py-2 bg-yellow-600 text-white w-2/5 md:w-1/5 m-auto rounded-md">
                         <Link href="/about" >
