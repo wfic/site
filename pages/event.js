@@ -10,9 +10,6 @@ function event() {
     <>
         <Head>
             <title>Wichita Falls Islamic Community Mosque | Events</title>
-            <meta name="description" content="Developed by psylab" />
-            {/* Change your Icon */}
-            <link rel="icon" href="/favicon.ico" />
         </Head>
         <Nav />
         <div className="container">

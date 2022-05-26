@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Link from 'next/link'
 
 import { HiOutlineMenuAlt3 } from 'react-icons/hi'
@@ -16,7 +16,7 @@ function Nav() {
     }
   return (
     <>
-        <nav className="bg-[url('/img/navbg.webp')] bg-center drop-shadow-md">
+        <nav className="bg-[url('/img/navbg.webp')] bg-center drop-shadow-md sticky top-0 left-0 z-10">
             <div className="container flex justify-between md:items-center md:flex-col py-5 md:py-10 w-full">
                 <div className="logo text-4xl font-Cinzel font-black text-yellow-600">
                     WF

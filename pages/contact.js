@@ -8,9 +8,6 @@ function contact() {
     <>
         <Head>
             <title>Wichita Falls Islamic Community Mosque | Contact</title>
-            <meta name="description" content="Developed by psylab" />
-            {/* Change your Icon */}
-            <link rel="icon" href="/favicon.ico" />
         </Head>
         <Nav />
 

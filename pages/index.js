@@ -16,11 +16,6 @@ export default function Home() {
     <>
         <Head>
             <title>Wichita Falls Islamic Community Mosque | Home</title>
-            <meta name="description" content="Developed by psylab" />
-            {/* Google Fonts */}
-            <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet"></link>
-            {/* Change your Icon */}
-            <link rel="icon" href="/favicon.ico" />
         </Head>
 
         <Nav />
@@ -78,7 +73,7 @@ export default function Home() {
                     <div className="absolute top-1/2 md:right-1/4 -translate-y-1/2">
                         <h2 className="text-xl md:text-4xl font-bold text-white font-Cinzel mb-5">Support us, <br /> we need your help.</h2>
                         <p className="w-[450px] text-gray-200 mb-5">May Allah bless you! Thank you. Those who (in charity) spend of their goods by night and by day, in secret and in public, have their reward with their Lord</p>
-                        <button class="py-2 px-5 bg-yellow-600 rounded-md">
+                        <button className="py-2 px-5 bg-yellow-600 rounded-md">
                             <Link href="/donate">
                                 <a className="text-white font-bold">Donate</a>
                             </Link>
@@ -94,7 +89,7 @@ export default function Home() {
                 <h2 className="text-4xl text-center font-Cinzel font-bold mb-20">Our Services</h2>
 
                 <div className="container text-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20">
-                    <div className="grid grid-cols-1 bg-[url('/img/services1.png')] bg-center bg-no-repeat">
+                    <div className="grid grid-cols-1">
                         <BsHexagon className="text-6xl m-auto mb-10 text-sky-500" />
                         <h4 className="text-sky-500 text-2xl font-Cinzel font-semibold mb-5">Shahada</h4>
                         <p className="text-slate-600 text-xl">Taking the shahada, profession of the Islamic faith, is one of the biggest decisions</p>
