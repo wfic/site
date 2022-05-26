@@ -121,8 +121,8 @@ export default function Home() {
                 <div className="container">
                     <div className="absolute top-1/2 md:right-1/4 -translate-y-1/2">
                         <h2 className="text-xl md:text-4xl font-bold text-white font-Cinzel mb-5">Islamic School</h2>
-                        <p className="w-[450px] text-gray-200 mb-5 text-sm">The Weekend School of the Islamic Center of Allah is committed to providing quality Islamic Education according to the Quran and the Sunnah of the Prophet Mohammed (Peace Be upon Him) to a diverse student population in the greater area.</p>
-                        <button class="py-2 px-5 bg-yellow-600 rounded-md">
+                        <p className="w-[450px] text-gray-200 mb-5 text-md">The Weekend School of the Islamic Center of Allah is committed to providing quality Islamic Education according to the Quran and the Sunnah of the Prophet Mohammed (Peace Be upon Him) to a diverse student population in the greater area.</p>
+                        <button className="py-2 px-5 bg-yellow-600 rounded-md">
                             <Link href="/school">
                                 <a className="text-white font-bold">See More</a>
                             </Link>
