@@ -43,7 +43,7 @@ export default function Home() {
                     <div className="grid grid-cols-1">
                         <FaQuran className="text-6xl m-auto mb-10 text-red-500" />
                         <h4 className="text-red-500 text-2xl font-Cinzel font-semibold mb-5">Knowledge</h4>
-                        <p className="text-slate-600 text-xl">A critshahal component of every Muslims journey is knowledge.</p>
+                        <p className="text-slate-600 text-xl">A critical component of every Muslims journey is knowledge.</p>
                     </div>
                     <div className="grid grid-cols-1">
                         <BsFillMoonStarsFill className="text-6xl m-auto text-emerald-500 mb-10" />
