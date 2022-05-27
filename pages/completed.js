@@ -2,8 +2,8 @@ import React from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 
-import Nav from '../components/nav'
-import Footer from '../components/footer'
+import Nav from '../components/Nav'
+import Footer from '../components/Footer'
 
 function completed() {
   return (

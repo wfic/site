@@ -5,8 +5,8 @@ import Link from 'next/link'
 import { FaDonate } from 'react-icons/fa'
 
 
-import Nav from '../components/nav'
-import Footer from '../components/footer'
+import Nav from '../components/Nav'
+import Footer from '../components/Footer'
 
 function cancel() {
   return (
