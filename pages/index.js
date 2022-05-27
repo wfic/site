@@ -176,7 +176,7 @@ export async function getStaticProps() {
     const month = new Date().getMonth()
     const year = new Date().getFullYear()
 
-    const res = await fetch(`http://api.aladhan.com/v1/calendar?latitude=33.930828&longitude=-98.484879&method=2&month=${month+1}&year=${year}`)
+    const res = await fetch(`http://api.aladhan.com/v1/calendar?latitude=33.965980&longitude=-98.518550&method=2&month=${month+1}&year=${year}`)
     const data = await res.json()
 
 

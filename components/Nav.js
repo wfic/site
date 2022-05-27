@@ -34,6 +34,16 @@ function Nav() {
                             </Link>
                         </li>
                         <li className={style.buttonUnderlineAnim}>
+                            <Link href="/school">
+                                School
+                            </Link>
+                        </li>
+                        <li className={style.buttonUnderlineAnim}>
+                            <Link href="/gallery">
+                                Gallery
+                            </Link>
+                        </li>
+                        <li className={style.buttonUnderlineAnim}>
                             <Link href="/about">
                                 About
                             </Link>
@@ -41,11 +51,6 @@ function Nav() {
                         <li className={style.buttonUnderlineAnim}>
                             <Link href="/contact">
                                 Contact
-                            </Link>
-                        </li>
-                        <li className={style.buttonUnderlineAnim}>
-                            <Link href="/school">
-                                School
                             </Link>
                         </li>
                         <li className={style.buttonUnderlineAnim}>
