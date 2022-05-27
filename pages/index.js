@@ -11,7 +11,10 @@ import Nav from '../components/Nav'
 import Hero from '../components/Hero'
 import Footer from '../components/Footer'
 
-export default function Home() {
+export default function Home({pt}) {
+    const today = new Date()
+    const formattedDate = today.toDateString()
+    // console.log(date)
   return (
     <>
         <Head>
@@ -22,15 +25,48 @@ export default function Home() {
         <Hero />
         <main>
             {/* Welcome section */}
-            <div className="relative bg-[url('/img/bg/homeBg.png')] bg-no-repeat bg-center mb-20">
-                {/* <img src="/img/bg/homeBg.png" alt="home background" /> */}
-                <div className="container h-[50vh] md:h-[70vh] grid place-content-center text-center">
-                    <h2 className="text-xl md:text-4xl font-Cinzel font-bold text-slate-900 mb-5 md:mb-10">Welcome to Wichita Falls Islamic Society</h2>
-                    <p className="text-md md:text-xl text-slate-700 w-2/3 m-auto">The Shaha is not just a mosque for prayers rather it is a community center for all. The Center is committed to preserving an Islamic identity, building and supporting a viable Muslim community, promoting a comprehensive Islamic way of life based on the Holy Quran and the Sunnah of Prophet Muhammad.</p>
-                    <div className="mt-10 px-4 py-2 bg-yellow-600 text-white w-2/5 md:w-1/5 m-auto rounded-md">
-                        <Link href="/about" >
-                            Read more
-                        </Link>
+            <div className="relative bg-[url('/img/bg/homeBg.png')] bg-no-repeat bg-center py-20">
+                <div className="container grid gap-5 grid-cols-1 md:grid-cols-2 place-content-center text-center">
+                    <div className="text-left">
+                        <h2 className="text-2xl md:text-4xl font-Cinzel font-bold text-slate-900 mb-5 md:mb-10">Welcome to Wichita Falls Islamic Society</h2>
+                        <p className="text-md md:text-xl text-slate-700 w-4/5">The Shaha is not just a mosque for prayers rather it is a community center for all. The Center is committed to preserving an Islamic identity, building and supporting a viable Muslim community, promoting a comprehensive Islamic way of life based on the Holy Quran and the Sunnah of Prophet Muhammad.</p>
+                        <div className="mt-10 px-4 py-2 bg-yellow-600 text-white w-2/5 md:w-1/5 rounded-md">
+                            <Link href="/about" >
+                                Read more
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="p-10 bg-slate-300/20 backdrop-blur-sm border-[1px] border-white rounded-sm w-full 2xl:w-2/3 mt-10 md:mt-0 2xl:ml-auto">
+                        <h2 className="text-xl md:text-4xl font-bold font-Cinzel text-slate-800">Prayer Times</h2>
+                        <p className="text-md md:text-xl text-slate-800">Prayer time in Texas</p>
+                        <span className="text-sm md:text-md text-slate-600">{formattedDate}</span>
+
+                        <div className="mx-10 mt-10 space-y-5">
+                            <div className="flex justify-between items-center text-xl font-semibold text-slate-600">
+                                <span>Fajr</span>
+                                <span>{pt.Fajr}</span>
+                            </div>
+                            <div className="flex justify-between items-center text-xl font-semibold text-slate-600">
+                                <span>Sunrise</span>
+                                <span>{pt.Sunrise}</span>
+                            </div>
+                            <div className="flex justify-between items-center text-xl font-semibold text-slate-600">
+                                <span>Dhuhr</span>
+                                <span>{pt.Dhuhr}</span>
+                            </div>
+                            <div className="flex justify-between items-center text-xl font-semibold text-slate-600">
+                                <span>Asr</span>
+                                <span>{pt.Asr}</span>
+                            </div>
+                            <div className="flex justify-between items-center text-xl font-semibold text-slate-600">
+                                <span>Maghrib</span>
+                                <span>{pt.Maghrib}</span>
+                            </div>
+                            <div className="flex justify-between items-center text-xl font-semibold text-slate-600">
+                                <span>Isha</span>
+                                <span>{pt.Isha}</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -133,4 +169,20 @@ export default function Home() {
         <Script src="/node_modules/dist/js/index.min.js"></Script>
     </>
   )
+}
+
+export async function getStaticProps() {
+    const today = new Date().getDate()
+    const month = new Date().getMonth()
+    const year = new Date().getFullYear()
+
+    const res = await fetch(`http://api.aladhan.com/v1/calendar?latitude=33.930828&longitude=-98.484879&method=2&month=${month+1}&year=${year}`)
+    const data = await res.json()
+
+
+    return {
+        props: {
+            pt: data.data[today-1].timings
+        }
+    }
 }
