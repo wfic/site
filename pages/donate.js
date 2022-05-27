@@ -30,10 +30,10 @@ function donate() {
                         <h2 className="text-3xl md:text-4xl font-Cinzel font-semibold text-yellow-600">Thank You For Your Desire To Give!</h2>
                         
                         <div className="grid place-items-center mt-10">
-                            <FaDonate className="text-8xl text-yellow-600" />
+                            <FaDonate className="text-8xl text-sky-600" />
                         </div>
                         <p className='mt-5 text-xl text-slate-600'>Please donate to our new mosque in paypal</p>
-                        <button className="text-white bg-blue-600 rounded-full px-5 mt-3">
+                        <button className="text-white bg-sky-500 rounded-full px-5 mt-3">
                             <Link href="https://www.paypal.com/donate/?hosted_button_id=AQUAXFVS5ZY4A">Donate</Link>
                         </button>
 

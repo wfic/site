@@ -17,9 +17,9 @@ function Nav() {
   return (
     <>
         <nav className="bg-[url('/img/navbg.webp')] bg-center drop-shadow-md sticky top-0 left-0 z-10">
-            <div className="container flex justify-between md:items-center md:flex-col py-5 md:py-10 w-full">
+            <div className="container flex justify-between md:items-center md:flex-col py-4 md:py-6 w-full">
                 <div className="logo text-4xl font-Cinzel font-black text-yellow-600">
-                    WF
+                    <Link href='/'>WF</Link>
                 </div>
                 <div className="links hidden md:block">
                     <ul className="flex flex-col md:flex-row md:space-x-5 text-xl font-Cinzel pt-2 font-light ">

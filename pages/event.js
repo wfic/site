@@ -13,7 +13,10 @@ function event() {
         </Head>
         <Nav />
         <div className="container">
-            <div className="">Event Page</div>
+            <div className="h-[60vh]">
+                <h2>Want to cancel the donation?</h2>
+                <p>Your donation will help building the mosque and help the community</p>
+            </div>
         </div>
         <Footer />
     </>
