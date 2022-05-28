@@ -31,7 +31,6 @@ function contact() {
                         <a href="tel:++19403375021" className='text-slate-800 mt-4 font-semibold text-md md:text-xl'>Phone: 19403375021</a>
                     </div>
                     <div>
-                    <a href="mailto:islamicsocietyofwf@gmail.com" className='text-slate-800 font-semibold text-md md:text-xl '>Email: islamicsocietyofwf@gmail.com</a>
                     </div>
                 </div>
             </div>

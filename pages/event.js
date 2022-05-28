@@ -1,9 +1,27 @@
 import React from 'react'
 import Head from 'next/head'
+
+import {client} from '../lib/client'
+
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 
-function event() {
+export async function getServerSideProps() {
+    const query = '*[_type == "events"]';
+    const result = await client.fetch(query);
+
+    // console.log(result);
+
+    return {
+        props: {
+            events: result
+        }
+    };
+}
+
+const Event = ({events}) => {
+    // console.log(new Date(events[0].eventDate).toLocaleString('en-us',{month:'short', day:'numeric', year:'numeric', weekday:'short'}))
+
   return (
     <>
         <Head>
@@ -21,25 +39,39 @@ function event() {
             </div>
             <div className="container py-20">
                 <h2 className="text-2xl md:text-4xl font-semibold text-slate-800 font-Cinzel mb-10">Upcomming events</h2>
-                <div className="flex pt-5 border-t-2 border-slate-400 mb-10">
-                    <div className="flex items-center justify-start w-[250px] ">
-                        <div className="text-4xl md:text-6xl font-bold text-slate-300">28</div>
-                        <div className="flex flex-col ml-5">
-                            <span className="text-md md:text-xl font-semibold text-slate-900">May</span>
-                            <span className="text-md md:text-xl text-slate-500">Saturday</span>
+
+                {/* Data from sanity */}
+                {events.map((event, i) => (
+                    <div className="flex pt-5 border-t-2 border-slate-400 mb-10" key={i}>
+                        <div className="flex items-center mr-10">
+                            <div className="text-4xl md:text-6xl font-bold text-slate-300">
+                                {
+                                new Date(event.eventDate).toLocaleString('en-us',{day:'numeric'}).length<2 ? '0'+new Date(event.eventDate).toLocaleString('en-us',{day:'numeric'}) : new Date(event.eventDate).toLocaleString('en-us',{day:'numeric'})}
+                            </div>
+                            <div className="flex flex-col ml-5">
+                                <span className="text-md md:text-xl font-semibold text-slate-900">
+                                    {new Date(event.eventDate).toLocaleString('en-us',{month:'short'})}
+                                </span>
+                                <span className="text-md md:text-xl text-slate-500">
+                                    {new Date(event.eventDate).toLocaleString('en-us',{weekday:'short'})}
+                                </span>
+                            </div>
+                        </div>
+                        <div className="flex-2">
+                            <h3 className="text-xl md:text-2xl font-Cinzel font-semibold text-slate-800 mb-5">{event.title}</h3>
+                            <p className="text-md text-slate-400">{`${new Date(event.eventDate).toLocaleString('en-us',{month:'short', day:'numeric', year:'numeric', weekday:'short'})}`}</p>
+                            <p className="text-md text-slate-400">{event.description}</p>
                         </div>
                     </div>
-                    <div className="ml-20">
-                        <h3 className="text-xl md:text-2xl font-Cinzel font-semibold text-slate-800 mb-5">Message of the Quran Class</h3>
-                        <p className="text-md text-slate-400">28 May @ 6 pm - 7 pm</p>
-                        <p className="text-md text-slate-400">1701 Trigg Ln, Wichita Falls, TX, 76308, USA</p>
-                    </div>
-                </div>
+                ))}
+
+                
             </div>
         </main>
         <Footer />
     </>
   )
-}
+};
 
-export default event
+
+export default Event

@@ -78,6 +78,16 @@ function Nav() {
                     </Link>
                 </li>
                 <li className={style.mobileMenuLink} onClick={closeMenu}>
+                    <Link href="/school">
+                        School
+                    </Link>
+                </li>
+                <li className={style.mobileMenuLink} onClick={closeMenu}>
+                    <Link href="/gallery">
+                        Gallery
+                    </Link>
+                </li>
+                <li className={style.mobileMenuLink} onClick={closeMenu}>
                     <Link href="/about">
                         About
                     </Link>
@@ -87,11 +97,7 @@ function Nav() {
                         Contact
                     </Link>
                 </li>
-                <li className={style.mobileMenuLink} onClick={closeMenu}>
-                    <Link href="/school">
-                        School
-                    </Link>
-                </li>
+
                 <li className={style.mobileMenuLink} onClick={closeMenu}>
                     <Link href="/donate">
                         Donate

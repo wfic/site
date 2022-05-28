@@ -1,6 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
 
+import { AiFillFacebook } from 'react-icons/ai'
+import { AiOutlineWhatsApp } from 'react-icons/ai'
+
 function Footer() {
     const year = new Date().getFullYear()
   return (
@@ -62,9 +65,6 @@ function Footer() {
                             <a href="tel:+19403375021"></a>
                         </li>
                         <li className="text-sm md:text-md text-gray-100/80 font-light ">
-                            <a href="mailto:islamicsocietyofwf@gmail.com">islamicsocietyofwf@gmail.com</a>
-                        </li>
-                        <li className="text-sm md:text-md text-gray-100/80 font-light ">
                             <p>1701 Trigg Ln, Wichita Falls,</p>
                             <p>TX, 76308, USA</p>
                         </li>
@@ -74,13 +74,20 @@ function Footer() {
                     <h3 className="text-2xl font-bold font-Cinzel py-4 text-yellow-600">Social</h3>
                     <ul>
                         <li className="text-sm md:text-md text-gray-100/80 font-light ">
-                            <a href="http://www.facebook.com">Facebook</a>
+                            <a href="https://www.facebook.com/groups/559737301531661">
+                                <div className="flex justify-center items-center">
+                                    <AiFillFacebook/>
+                                    <span className="ml-2">Facebook</span>
+                                </div>
+                            </a>
                         </li>
                         <li className="text-sm md:text-md text-gray-100/80 font-light ">
-                            <a href="http://www.twitter.com">Twitter</a>
-                        </li>
-                        <li className="text-sm md:text-md text-gray-100/80 font-light ">
-                            <a href="http://www.instagram.com">Instagram</a>
+                            <a href="http://www.instagram.com">
+                                <div className="flex justify-center items-center">
+                                    <AiOutlineWhatsApp/>
+                                    <span className="ml-2">Whatsapp</span>
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
