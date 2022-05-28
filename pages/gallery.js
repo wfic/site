@@ -1,11 +1,10 @@
 import React, {useState, useEffect} from 'react'
 import Head from 'next/head'
-import {client, urlFor} from '../lib/client'
-import Youtube from 'react-youtube'
+import {client} from '../lib/client'
+import YouTube from 'react-youtube'
 
 import Nav from '../components/Nav'
 import Footer from '../components/Footer'
-import YouTube from 'react-youtube'
 
 export async function getServerSideProps() {
     // All photos query
@@ -89,14 +88,14 @@ function gallery({allData, currentData, eventsData, schoolData, newMosqueData, v
 
     // options for yt player
     const opts = {
-        height: "200",
+        height: "250",
         width: "350",
         playerVars: {
           autoplay: 1,
         },
       };
 
-      function onReady(e){
+    function onReady(e){
         e.target.pauseVideo()
     }
   return (
@@ -128,45 +127,45 @@ function gallery({allData, currentData, eventsData, schoolData, newMosqueData, v
                     <div className="tabContent grid place-content-center md:place-content-start">
                         {/* For All Images */}
                         <div className={toggleState == 1 ? "block" : "hidden"}>
-                            <div className="grid grid-cols-1 md:grid-cols-4 gap-5 mt-5">
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-5">
                                 {allData.map((item) => (
-                                    <img src={item.imgUrl} alt={item.title} className="h-[200px] w-[350px] rounded-md object-cover hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer" key={item._id} />
+                                    <img src={item.imgUrl} alt={item.title} className="w-full h-[300px] md:h-[250px] md:w-[450px] rounded-md object-cover hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer" key={item._id} />
                                 ))}
                             </div>
                         </div>
 
                         {/* For New Mosque */}
                         <div className={toggleState == 2 ? "block" : "hidden"}>
-                            <div className="grid grid-cols-1 md:grid-cols-4 gap-5 mt-5">
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-5">
                                 {newMosqueData.map((item) => (
-                                    <img src={item.imgUrl} alt={item.title} className="h-[200px] w-[350px] rounded-md object-cover hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer" key={item._id} />
+                                    <img src={item.imgUrl} alt={item.title} className="w-full h-[300px] md:h-[250px] md:w-[450px] rounded-md object-cover hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer" key={item._id} />
                                 ))}
                             </div>
                         </div>
 
                         {/* For Events */}
                         <div className={toggleState == 3 ? "block" : "hidden"}>
-                            <div className="grid grid-cols-1 md:grid-cols-4 gap-5 mt-5">
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-5">
                                 {eventsData.map((item) => (
-                                    <img src={item.imgUrl} alt={item.title} className="h-[200px] w-[350px] rounded-md object-cover hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer" key={item._id} />
+                                    <img src={item.imgUrl} alt={item.title} className="w-full h-[300px] md:h-[250px] md:w-[450px] rounded-md object-cover hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer" key={item._id} />
                                 ))}
                             </div>
                         </div>
 
                         {/* For School */}
                         <div className={toggleState == 4 ? "block" : "hidden"}>
-                            <div className="grid grid-cols-1 md:grid-cols-4 gap-5 mt-5">
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-5">
                                 {schoolData.map((item) => (
-                                    <img src={item.imgUrl} alt={item.title} className="h-[200px] w-[350px] rounded-md object-cover hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer" key={item._id} />
+                                    <img src={item.imgUrl} alt={item.title} className="w-full h-[300px] md:h-[250px] md:w-[450px] rounded-md object-cover hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer" key={item._id} />
                                 ))}
                             </div>
                         </div>
 
                         {/* For Current */}
                         <div className={toggleState == 5 ? "block" : "hidden"}>
-                            <div className="grid grid-cols-1 md:grid-cols-4 gap-5 mt-5">
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mt-5">
                                 {currentData.map((item) => (
-                                    <img src={item.imgUrl} alt={item.title} className="h-[200px] w-[350px] rounded-md object-cover hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer" key={item._id} />
+                                    <img src={item.imgUrl} alt={item.title} className="w-full h-[300px] md:h-[250px] md:w-[450px] rounded-md object-cover hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer" key={item._id} />
                                 ))}
                             </div>
                         </div>
@@ -175,7 +174,7 @@ function gallery({allData, currentData, eventsData, schoolData, newMosqueData, v
                         <div className={toggleState == 6 ? "block" : "hidden"}>
                             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 mt-5">
                                 {videoData.map((item) => (
-                                    <YouTube videoId={item.videoUrl.split("v=")[1].split("&")[0]} opts={opts} onReady={onReady} />
+                                    <YouTube videoId={item.videoUrl.split("v=")[1].split("&")[0]} opts={opts} onReady={onReady}  />
                                 ))}
                             </div>
                         </div>
