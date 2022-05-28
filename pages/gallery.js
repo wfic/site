@@ -173,7 +173,7 @@ function gallery({allData, currentData, eventsData, schoolData, newMosqueData, v
 
                         {/* For Videos */}
                         <div className={toggleState == 6 ? "block" : "hidden"}>
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-5">
+                            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3 mt-5">
                                 {videoData.map((item) => (
                                     <YouTube videoId={item.videoUrl.split("v=")[1].split("&")[0]} opts={opts} onReady={onReady} />
                                 ))}

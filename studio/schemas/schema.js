@@ -7,11 +7,12 @@ import events from './events'
 import gallery from './gallery'
 import tags from './tags'
 import videos from './videos'
+import school from './school'
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
   name: 'default',
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
-  types: schemaTypes.concat([events, gallery, tags, videos]),
+  types: schemaTypes.concat([events, gallery, tags, videos, school]),
 })
