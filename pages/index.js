@@ -29,8 +29,8 @@ export default function Home({pt}) {
                 <div className="container grid gap-5 grid-cols-1 md:grid-cols-2 place-content-center text-center">
                     <div className="text-left">
                         <h2 className="text-2xl md:text-4xl font-Cinzel font-bold text-slate-900 mb-5 md:mb-10">Welcome to Wichita Falls Islamic Society</h2>
-                        <p className="text-md md:text-xl text-slate-700 w-4/5">The Shaha is not just a mosque for prayers rather it is a community center for all. The Center is committed to preserving an Islamic identity, building and supporting a viable Muslim community, promoting a comprehensive Islamic way of life based on the Holy Quran and the Sunnah of Prophet Muhammad.</p>
-                        <div className="mt-10 px-4 py-2 bg-yellow-600 text-white w-2/5 md:w-1/5 rounded-md">
+                        <p className="text-md md:text-xl text-slate-700 w-4/5">The Wichita Falls Islamic Society is not just a mosque for prayers rather it is a community center for all. The Center is committed to preserving an Islamic identity, building and supporting a viable Muslim community, promoting a comprehensive Islamic way of life based on the Holy Quran and the Sunnah of Prophet Muhammad.</p>
+                        <div className="mt-10 px-4 py-2 bg-yellow-600 text-white w-3/5 md:w-1/5 rounded-md">
                             <Link href="/about" >
                                 Read more
                             </Link>
