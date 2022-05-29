@@ -16,7 +16,6 @@ function Mailer() {
       }).catch(err => {
           console.log(err);
       })
-      e.reset()
   }
 
   return (
