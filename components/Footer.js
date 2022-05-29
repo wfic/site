@@ -58,7 +58,7 @@ function Footer() {
                     </ul>
                 </div>
                 <div className="footerContact">
-                    <h3 className="text-2xl font-bold font-Cinzel py-4 text-yellow-600">Contact</h3>
+                    <h3 className="text-2xl font-bold font-Cinzel py-4 text-yellow-600">Address</h3>
                     <ul>
                         <li className="text-sm md:text-md text-gray-100/80 font-light ">
                             <a href="tel:+19403375021"></a>

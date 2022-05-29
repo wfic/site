@@ -16,6 +16,7 @@ function Mailer() {
       }).catch(err => {
           console.log(err);
       })
+      alert("Your message has been sent successfully!");
   }
 
   return (
