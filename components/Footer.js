@@ -55,7 +55,6 @@ function Footer() {
                         <li className="text-sm md:text-md text-gray-100/80 font-light ">Scholarship</li>
                         <li className="text-sm md:text-md text-gray-100/80 font-light ">Shahada</li>
                         <li className="text-sm md:text-md text-gray-100/80 font-light ">Community</li>
-                        <li className="text-sm md:text-md text-gray-100/80 font-light ">Donate</li>
                     </ul>
                 </div>
                 <div className="footerContact">
