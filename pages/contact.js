@@ -27,11 +27,11 @@ function contact() {
                 <div className="grid grid-cols-1 md:grid-cols-2 mt-10">
                     <div className="">
                         <h2 className="text-md md:text-xl font-semibold text-slate-800 py-2">Islamic Society of Wichita Falls</h2>
-                        <p className='text-md md:text-xl text-slate-800'>+1701 Trigg Ln,</p>
+                        <p className='text-md md:text-xl text-slate-800'>1701 Trigg Ln,</p>
                         <p className='text-md md:text-xl text-slate-800'>Wichita Falls,</p>
                         <p className='text-md md:text-xl text-slate-800 mb-3'>TX, 76308, USA</p>
                         <div>
-                            <a href="tel:++19403375021" className='text-slate-800 mt-4 font-semibold text-md md:text-xl'>Phone: 19403375021</a>
+                            <a href="tel:++19403375021" className='text-slate-800 mt-4 font-semibold text-md md:text-xl'>Phone: +19403375021</a>
                         </div>
                         <div>
                         </div>

@@ -9,7 +9,7 @@ export default function Document() {
         {/* Google Fonts */}
         <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet"></link>
         {/* Change your Icon */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/mosque.png" />
       </Head>
       <body>
         <Main />
