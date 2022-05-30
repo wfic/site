@@ -25,6 +25,22 @@ function donate() {
             </div>
 
             <div className="container">
+                <h2 className="font-Cinzel font-semibold text-yellow-600 text-2xl text-center mt-10">Support For Our new mosque</h2>
+                <div className="newMosqueGallery grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-3 mt-10">
+                    <div>
+                        <img src="/img/mosque/m1.jpg" alt="New Mosque 1" className="w-full h-[300px] md:h-[250px] md:w-[450px] rounded-md object-cover hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer" />
+                    </div>
+                    <div>
+                        <img src="/img/mosque/m2.jpg" alt="New Mosque 2" className="w-full h-[300px] md:h-[250px] md:w-[450px] rounded-md object-cover hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer" />
+                    </div>
+                    <div>
+                        <img src="/img/mosque/m3.jpg" alt="New Mosque 3"className="w-full h-[300px] md:h-[250px] md:w-[450px] rounded-md object-cover hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer"  />
+                    </div>
+                    <div>
+                        <img src="/img/mosque/m4.jpg" alt="New Mosque 4" className="w-full h-[300px] md:h-[250px] md:w-[450px] rounded-md object-cover hover:scale-105 hover:shadow-xl transition-all duration-300 cursor-pointer" />
+                    </div>
+
+                </div>
                 <div className="content py-20">
                     <div className="text-center">
                         <h2 className="text-3xl md:text-4xl font-Cinzel font-semibold text-yellow-600">Thank You For Your Desire To Give!</h2>
