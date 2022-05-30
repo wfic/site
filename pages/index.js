@@ -30,7 +30,7 @@ export default function Home({pt}) {
                     <div className="text-left">
                         <h2 className="text-2xl md:text-4xl font-Cinzel font-bold text-slate-900 mb-5 md:mb-10">Welcome to Wichita Falls Islamic Society</h2>
                         <p className="text-md md:text-xl text-slate-700 w-4/5">The Wichita Falls Islamic Society is not just a mosque for prayers rather it is a community center for all. The Center is committed to preserving an Islamic identity, building and supporting a viable Muslim community, promoting a comprehensive Islamic way of life based on the Holy Quran and the Sunnah of Prophet Muhammad.</p>
-                        <div className="mt-10 px-4 py-2 bg-yellow-600 text-white w-3/5 md:w-1/5 rounded-md">
+                        <div className="mt-10 px-4 py-2 bg-yellow-600 text-white text-center w-2/4 md:w-1/5 rounded-md">
                             <Link href="/about" >
                                 Read more
                             </Link>
@@ -108,7 +108,7 @@ export default function Home({pt}) {
                 <div className="container">
                     <div className="absolute top-1/2 md:right-1/4 -translate-y-1/2">
                         <h2 className="text-xl md:text-4xl font-bold text-white font-Cinzel mb-5">Support us, <br /> we need your help.</h2>
-                        <p className="w-[450px] text-gray-200 mb-5">May Allah bless you! Thank you. Those who (in charity) spend of their goods by night and by day, in secret and in public, have their reward with their Lord</p>
+                        <p className="w-full md:w-[450px] text-gray-200 mb-5">May Allah bless you! Thank you. Those who (in charity) spend of their goods by night and by day, in secret and in public, have their reward with their Lord</p>
                         <button className="py-2 px-5 bg-yellow-600 rounded-md">
                             <Link href="/donate">
                                 <a className="text-white font-bold">Donate</a>
@@ -150,9 +150,9 @@ export default function Home({pt}) {
                     <img src="/img/bg/schoolbg.webp" alt="school bg" className="h-[40vh] md:h-[60vh] w-full object-cover" />
                 </div>
                 <div className="container">
-                    <div className="absolute top-1/2 md:right-1/4 -translate-y-1/2">
+                    <div className="absolute top-1/2 md:right-1/4 -translate-y-1/2 md:w-1/3">
                         <h2 className="text-xl md:text-4xl font-bold text-white font-Cinzel mb-5">Islamic School</h2>
-                        <p className="w-[450px] text-gray-200 mb-5 text-md">The Weekend School of the Islamic Center of Allah is committed to providing quality Islamic Education according to the Quran and the Sunnah of the Prophet Mohammed (Peace Be upon Him) to a diverse student population in the greater area.</p>
+                        <p className="w-full md:w-[450-px] text-gray-200 mb-5 text-md">The Weekend School of the Islamic Center of Allah is committed to providing quality Islamic Education according to the Quran and the Sunnah of the Prophet Mohammed (Peace Be upon Him) to a diverse student population in the greater area.</p>
                         <button className="py-2 px-5 bg-yellow-600 rounded-md">
                             <Link href="/school">
                                 <a className="text-white font-bold">See More</a>
