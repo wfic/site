@@ -17,9 +17,11 @@ function Nav() {
   return (
     <>
         <nav className="bg-[url('/img/navbg.webp')] bg-center drop-shadow-md sticky top-0 left-0 z-10">
-            <div className="container flex justify-between md:items-center md:flex-col py-4 md:py-6 w-full">
-                <div className="logo text-4xl font-Cinzel font-black text-yellow-600">
-                    <Link href='/'>WF</Link>
+            <div className="container flex justify-between items-center md:items-center md:flex-col py-2 md:py-4 w-full">
+                <div className="logo text-4xl font-Cinzel font-black text-yellow-600 w-12 md:w-20">
+                    <Link href='/'>
+                        <img src="/img/logo.svg" alt="Logo" />
+                    </Link>
                 </div>
                 <div className="links hidden md:block">
                     <ul className="flex flex-col md:flex-row md:space-x-5 text-xl font-Cinzel pt-2 font-light ">
