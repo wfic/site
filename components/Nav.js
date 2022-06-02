@@ -67,7 +67,7 @@ function Nav() {
                 </div>
             </div>
         </nav>
-        <div className={isOpen ? "mobileLinks md:hidden absolute top:calc(100vh-120px) left-1/2 -translate-x-[50%] bg-transparent backdrop-blur-md drop-shadow-xl rounded-sm w-full h-[100vh] grid place-content-center transition-all duration-300 z-10 bg-center" : "hidden"}>
+        <div className={isOpen ? "mobileLinks md:hidden fixed top-1/2 left-1/2 -translate-x-[50%] -translate-y-1/2 bg-white drop-shadow-2xl w-3/5 h-[50vh] grid place-content-center transition-all duration-300 z-10 bg-center rounded-2xl" : "hidden"}>
             <ul className="text-center space-y-5 text-xl font-Cinzel pt-2 font-light ">
                 <li className={style.mobileMenuLink} onClick={closeMenu}>
                     <Link href="/">
