@@ -57,8 +57,8 @@ function donate() {
 
                     </div>
                     <div className="developerChannel text-center mt-10">
-                        <Link href="https://www.youtube.com/channel/UCen4h4v9NnDKEHzOvE93BIA">
-                            <a className="py-2 px-3 bg-red-700 text-white font-semibold rounded-md  border-red-700 hover: border-2 hover:border-red-700 hover:bg-white hover:text-red-700"><span >Subscribe</span> Our Developer Youtube Channel</a>
+                        <Link href="https://www.buymeacoffee.com/psycoder44s">
+                            <a className="py-2 px-3 bg-red-700 text-white font-semibold rounded-md  border-red-700 hover: border-2 hover:border-red-700 hover:bg-white hover:text-red-700"><span >Support our developer</span> Buy him a coffee</a>
                         </Link>
                     </div>
                 </div>
