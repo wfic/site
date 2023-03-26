@@ -40,7 +40,7 @@ function about() {
                     <ImQuotesLeft className="text-4xl text-slate-600"/>
                     <p className="text-md md:text-xl text-slate-600">Assalaamu Alaikum:</p>
                     <p className="text-md md:text-xl text-slate-600">Thank you for visiting the Wichita Falls Islamic Center website. The WFIC is located in Trigg Lane, Wichita Falls, Texas, and is one of the first mosques in Texas. The WFIC is not only a mosque, it is also a community center. I invite you to visit us and discover the beauty of our Center. This will give you an opportunity to meet our diverse and friendly community represented by dozens of different ethnicities. Hope to see you soon at our center!</p>
-                    <p className="text-md md:text-xl text-slate-600">Dr. Ahmed A Mattar, <span className="text-yellow-600">Community Leader and Imam,</span> Wichita Falls Islamic Center</p>
+                    <p className="text-md md:text-xl text-slate-600">Mohammad Javed Ramzan, <span className="text-yellow-600">Community Leader and Imam,</span> Wichita Falls Islamic Center</p>
                 </div>
             </div>
         </main>
